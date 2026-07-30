@@ -18,7 +18,7 @@ export default function ReferralBenefits() {
   ];
 
   return (
-    <section className="py-16 px-10">
+    <section className="py-16 px-6 md:px-10">
 
       <h2 className="text-3xl font-bold text-center text-blue-600 mb-10">
         Referral Benefits

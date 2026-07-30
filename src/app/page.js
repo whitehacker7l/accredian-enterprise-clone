@@ -12,16 +12,19 @@ import Footer from "../components/layout/Footer";
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
-      <Hero/>
-      <TrackRecord />
-      <WhyAccredian />
-      <Partners />
-      <HowItWorks />
-      <ReferralBenefits />
-      <FAQ />
-      <Footer />
-    </>
-  );
+  <>
+  <Navbar/>
+  <main className="w-full overflow-x-hidden">
+    <Hero/>
+    <TrackRecord/>
+    <WhyAccredian/>
+    <Partners/>
+    <HowItWorks/>
+    <ReferralBenefits/>
+    <FAQ/>
+
+  </main> 
+  <Footer/>
+</>
+);
 }

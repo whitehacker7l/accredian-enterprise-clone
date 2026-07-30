@@ -32,7 +32,7 @@ export default function FAQ() {
 
 
   return (
-    <section className="py-16 px-10 bg-gray-50">
+    <section className="py-16 px-6 md:px-10 bg-gray-50">
 
       <h2 className="text-3xl font-bold text-center text-blue-600 mb-10">
         Frequently Asked Questions
