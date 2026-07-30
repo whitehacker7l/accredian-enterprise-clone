@@ -4,10 +4,9 @@
   --background: #ffffff;
   --foreground: #171717;
   --primary: #2563eb;
-  --secondary: #1e40af;
+  --secondary: #1d4ed8;
   --light: #f8fafc;
 }
-
 
 @theme inline {
   --color-background: var(--background);
@@ -16,18 +15,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
-body {
-  background: #f8fafc;
-  color: #171717;
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* ----------------------------- */
+/* Global Styles */
+/* ----------------------------- */
 
 html {
   scroll-behavior: smooth;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 html,
@@ -37,6 +30,78 @@ body {
   overflow-x: hidden;
 }
 
-* {
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #171717;
+  background: linear-gradient(
+    180deg,
+    #fff7f9 0%,
+    #fff5f8 50%,
+    #fff3f7 100%
+  );
+}
+/* ----------------------------- */
+/* Universal */
+/* ----------------------------- */
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+/* ----------------------------- */
+/* Smooth Animations */
+/* ----------------------------- */
+
+button,
+a {
+  transition: all 0.3s ease;
+}
+
+/* ----------------------------- */
+/* Partner Marquee Animation */
+/* ----------------------------- */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 20s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ----------------------------- */
+/* Responsive */
+/* ----------------------------- */
+
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
 }
